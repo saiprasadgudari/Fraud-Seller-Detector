@@ -1,0 +1,29 @@
+seed: 42
+label_def:
+  min_fraud_orders: 2   
+
+
+split:
+  strategy: time
+  cutoff_date: "2024-01-03T00:00:00"   
+  random_test_size: 0.2                
+
+model:
+  type: lightgbm
+  params:
+    n_estimators: 500
+    learning_rate: 0.05
+    num_leaves: 63
+    min_child_samples: 40
+    subsample: 0.8           
+    subsample_freq: 1        
+    colsample_bytree: 0.8    
+    is_unbalance: true       
+    random_state: 42
+
+combine_anomaly:
+  enabled: true
+  weight_supervised: 0.7
+  weight_isoforest: 0.3
+
+threshold: 0.5

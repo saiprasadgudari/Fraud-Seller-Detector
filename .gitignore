@@ -1,0 +1,48 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.ipynb_checkpoints/
+*.log
+.pytest_cache/
+.coverage
+coverage.xml
+
+# --- Envs / secrets ---
+.env
+.env.*
+.venv/
+venv/
+
+# --- OS / IDE ---
+.DS_Store
+.vscode/
+.idea/
+
+# --- Artifacts & big binaries ---
+artifacts/
+reports/
+
+# If you want to keep a tiny example report, un-ignore a folder:
+# !reports/sample/**
+
+# --- Data (keep repo lightweight) ---
+data/raw/
+data/interim/
+data/processed/
+data/labels/
+
+# If you want to ship a small sample dataset:
+# !data/sample/**
+# !data/README.md
+
+# --- Common large formats ---
+*.parquet
+*.feather
+*.arrow
+*.pkl
+*.model
+*.bin
+*.db
+*.sqlite

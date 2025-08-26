@@ -1,0 +1,28 @@
+seed: 42
+anchor_date: "2024-01-01T00:00:00"
+
+n_sellers: 2000
+n_buyers: 20000
+
+categories: [electronics, fashion, home, beauty, sports, toys, outdoors]
+carriers: [UPS, FedEx, USPS, DHL]
+payment_methods:
+  - [card, 0.70]
+  - [paypal, 0.10]
+  - [bank_transfer, 0.10]
+  - [gift_card, 0.05]
+  - [cod, 0.05]
+
+regions:
+  NE: [Boston, New York, Philadelphia]
+  SE: [Atlanta, Miami, Charlotte]
+  MW: [Chicago, Detroit, Minneapolis]
+  SW: [Phoenix, Dallas, Houston]
+  W:  [Seattle, San Francisco, Los Angeles]
+
+late_threshold_days: 5
+base_late_rate: 0.12
+base_refund_rate: 0.03
+fraud_refund_boost: 0.80     
+promised_transit_mean_days: 4
+handling_time_mean_days: 1.2

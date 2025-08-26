@@ -1,0 +1,2 @@
+drift_share_threshold: 0.2   
+report_name: "Feature Data Drift"
