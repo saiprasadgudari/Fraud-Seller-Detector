@@ -228,10 +228,5 @@ make dashboard   # streamlit run app/dashboard.py
 make monitor     # python -m src.monitoring.run
 ```
 
----
 
-## License
-
-MIT
----
 
