@@ -232,7 +232,6 @@ make monitor     # python -m src.monitoring.run
 
 ## License
 
-MIT (or your choice). Replace this section if you prefer another license.
-
+MIT
 ---
 
