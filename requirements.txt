@@ -1,0 +1,30 @@
+# Core scientific stack
+numpy
+pandas
+polars
+pyarrow
+duckdb
+
+# Modeling
+scikit-learn
+lightgbm
+xgboost
+catboost
+shap
+
+# API & app
+fastapi
+uvicorn[standard]
+pydantic
+requests
+joblib
+PyYAML
+tqdm
+
+# Dashboard
+streamlit
+plotly
+matplotlib
+
+# Optional monitoring (enable if you want drift reports)
+evidently>=0.7
